@@ -7,6 +7,8 @@ import {
   Route,
 } from 'react-router-dom';
 import HeroesFeatured from './Components/HeroesFeatured/HeroesFeatured';
+import SearchView from './Components/SearchView/SearchView';
+import HeroDetails from './Components/HeroDetails/HeroDetails';
 
 function App() {
   return (
@@ -20,10 +22,10 @@ function App() {
                 <HeroesFeatured />
               </Route>
               <Route path="/search/:name">
-                
+                <SearchView />
               </Route>
               <Route path="/hero/:id">
-                
+                <HeroDetails />
               </Route>
             </Switch>
           </div>
@@ -39,4 +41,3 @@ function App() {
 }
 
 export default App;
-
